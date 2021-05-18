@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewData["Title"] = "Hilton";
+}
+
+
+
+<h1>Hilton</h1>
+<ul>
+    @foreach (var item in Model)
+    {
+<li>@item.Id @item.NickName @item.YearBuilt.ToString("dd-MM-yyyy") @item.Value</li>}
+</ul>
